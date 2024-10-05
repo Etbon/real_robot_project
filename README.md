@@ -10,7 +10,7 @@ This project aims to create a robot that autonomously follows a wall using ROS 2
 - [Part II: Wall Detection Using Services](#part-ii-wall-detection-using-services)
 - [Part III: Odometry Recording Using Actions](#part-iii-odometry-recording-using-actions)
 - [How to Test](#how-to-test)
-- [Project Structure](#project-structure)
+- [Project Structure](#project-simulation)
 ---
 
 ## Overview
@@ -100,5 +100,7 @@ Create an action server to record the robot’s odometry data as it moves, provi
 
 ---
 
-## Project Structure
+## Project Simulation
+https://github.com/user-attachments/assets/23d1df1d-4830-4838-9f75-55ead31f4549
+
 
