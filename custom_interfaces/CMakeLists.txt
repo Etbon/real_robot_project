@@ -34,7 +34,7 @@ endif()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/FindWall.srv"
-  #"action/OdomRecord.action"
+  "action/OdomRecord.action"
 
 )
 

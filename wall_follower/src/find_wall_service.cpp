@@ -212,7 +212,7 @@ private:
                 break; // Aligned
             }
 
-            RCLCPP_INFO(this->get_logger(), "right_laser_angle_: %f, min_value_angle: %f, angle_error_: %f", right_laser_angle_, min_value_angle, angle_error_);
+            //RCLCPP_INFO(this->get_logger(), "right_laser_angle_: %f, min_value_angle: %f, angle_error_: %f", right_laser_angle_, min_value_angle, angle_error_);
 
             // Rotate the robot slowly
             cmd_vel_msg.linear.x = 0.0;

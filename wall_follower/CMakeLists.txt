@@ -42,10 +42,12 @@ endif()
 
 add_executable(wall_follower_node src/wall_follower.cpp)
 add_executable(find_wall_service_node src/find_wall_service.cpp)
-#add_executable(odom_record_action_server_node src/odom_record_action_server.cpp)
+add_executable(odom_record_action_server_node src/odom_record_action_server.cpp)
 
 ament_target_dependencies(wall_follower_node 
-	rclcpp geometry_msgs 
+	rclcpp 
+	rclcpp_action
+	geometry_msgs 
 	sensor_msgs
 	custom_interfaces
 )
@@ -59,10 +61,22 @@ ament_target_dependencies(find_wall_service_node
 	custom_interfaces
 )
 
+ament_target_dependencies(odom_record_action_server_node
+	rclcpp
+	rclcpp_action
+	sensor_msgs
+	nav_msgs
+	geometry_msgs
+	rosidl_default_generators
+	custom_interfaces
+
+)
+
 
 install(TARGETS
 	wall_follower_node
 	find_wall_service_node
+	odom_record_action_server_node
 	DESTINATION lib/${PROJECT_NAME} 
 )
 
